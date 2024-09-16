@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP05-Formularios</title>
+</head>
+<body>
+    <I><h1>TP05-FORMULARIOS</h1></I>
+    <I><H2>Seguel Azul</H2></I>
+     
+    <h3>1.¿Qué atributo se utiliza para especificar la URL a la que se enviarán los datos del formulario? <br>
+        a) method<br> <u>b) action<br></u> c) target<br> d) url</h3>
+
+    <h3>2.¿Cuál es el atributo que se utiliza para especificar el tipo de datos que se espera en un campo de entrada? 
+        a) data-type<br> b) input-type<br> <u>c) type</u><br>d) data<br></h3>
+
+    <h3>3.¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar direcciones de correo electrónico? 
+        a) text<br> <u>b) email<br></u> c) mail<br> d) input</h3>
+
+    <h3>4.¿Cuál es el elemento HTML que se utiliza para asociar un texto descriptivo con un campo de entrada en un formulario?
+         a) description<br> b) info<br> c) placeholder<br> <u>d) label<br></u></h3>
+    
+    <h3>5.¿Cuál de las siguientes opciones es la etiqueta correcta para crear un botón de envío en un formulario? 
+        a)<u>&lt;input type="submit"&gt;</u><br> b) &lt;button type="submit"&gt;<br> c) &lt;btn&gt;<br> d) &lt;submit&gt;<br></h3>     
+
+    <h3>6.¿Cuál de los siguientes atributos se utiliza para hacer que un campo de entrada sea obligatorio en un formulario? 
+        <u>a) required<br></u> b) mandatory<br> c) validate<br> d) mandatoryfield<br></h3>    
+
+    <h3>7.¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desplegable en un formulario?
+         a) list<br> b) dropdown<br><u>c) select</u><br> d) &lt;input type="list"&gt;<br></h3>    
+
+    <h3>8.¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido? 
+        <u>a) text</u>b) email c) mail d) input</h3>   
+        
+    <h3>9.¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario? 
+        <u>a) value</u> b) default c) preset d) initial</h3>    
+
+    <h3>10.¿Qué son los métodos / verbos de petición HTTP? Dar ejemplos. Bibliografía MDN</h3>   
+    <i><p>Los metodos/verbos de petición son para indicar la acción que se desea realizar para un recurso determinado, algunos de los metodos son;<br>
+    método GET, método Head, método POST, el modo PUT, el método DELETE, el método connect, el método OPTIONS, el método TRACE y método PATCH</p></i>
+
+    <h3>11.¿Qué son los códigos de estado de respuestas HTTP? Realizar una tabla con su clasificación. Bibliografía MDN</h3>
+    <i><p>Los codigos de estado de respuesta HTTP indican si se ha completado satisfactoriamente una solicitud HTTP especifica
+        aquellas respuestas se agrupan en 5 clases;<br>
+        respuestas informativas,respuestas satisfactoria,redicciones,errores de los clientes y errores de los clientes<br>
+
+    </p></i>
+
+    <h3>2.Aplicar formularios</h3>
+    <h3>La página tiene que ser sobre el registro de clientes para una empresa. <br>
+        Elegir una de las siguientes temáticas: autos, videojuegos, cosmética, indumentaria.<br>
+        El formulario debe solicitar los siguientes datos: nombre y apellido* , correo electrónico*, fecha de nacimiento, DNI*, teléfono, usuario de X, 
+        usuario de Instagram, ciudad, provincia. <br>
+        El formulario tendrá, además, que consultar al usuario sobre sus preferencias relacionadas con la temática elegida, por ejemplo: <br>
+        ¿qué deportes realiza? tenis - natación - basquet<br>
+        </h3>
+    <h1>ingreso a Garnier</h1>
+
+    <form action="/registro" method="post">
+        <fieldset>
+            <label for="nombre">nombre</label>
+             <input type="text" id="nombre" name="nombre" required> <!--tipo texto-->
+
+            <label for="apellido">apellido</label>
+            <input type="text" id="apellido" name="apellido" required> <!--tipo texto-->
+
+            <label for="correo electrónico">correo electrónico</label>
+            <input type="text" id="correo electrónico" name="correo electrónico" required> <!--tipo texto-->
+
+            <label for="fecha de nacimiento">fecha de nacimiento</label>
+            <input type="text" id="fecha de nacimiento" name="fecha de nacimiento" required> 
+
+            <label for="DNI">DNI</label>
+            <input type="text" id="DNI" name="DNI" required>
+
+            <label for="Telefono">Telefono</label>
+            <input type="text" id="telefono" name="telefono" required><br>
+
+
+            <br><label for="Usuario de X">Usuario de X</label>
+            <input type="text" id="Usuario de X" name="Usuario de X" required>
+
+            <label for="Usuario de Instagram">Usuario de Instagram</label>
+            <input type="text" id="usuario de Instagram" name="Usuario de Instagram" required>
+
+
+            <label for="ciudad">ciudad:</label>
+            <select id="ciudad" name="ciudad" required>
+                <option value="">seleccione una opción</option>
+
+                <option value="Buenos aires">buenos aires</option>
+
+                <option value="salta">salta</option>
+
+                <option value="Cordoba">Cordoba</option>
+
+                <option value="Neuquen">Neuquen</option>
+
+                <option value="Santa fe">santa fe</option>
+
+                <option value="rio negro">rio negro</option>
+
+                <option value="Jujuy">Jujuy</option>
+
+                <option value="Formosa">Formosa</option>
+
+                <option value="La plata">La plata</option>
+
+                <option value="otros...">otros...</option>
+
+
+
+            </select>
+
+            <label for="provincia">provincia:</label>
+            <select id="provincia" name="provincia" required>
+                <option value="">seleccione una opcion</option> 
+
+                <option value="Ciudad de buenos aires">ciudad de buenos aires</option>
+
+                <option value="salta">salta</option>
+
+                <option value="cordoba">cordoba</option>
+
+                <option value="Neuquen">Neuquen</option>
+
+                <option value="santa fe">santa fe</option>
+
+                <option value="viedma">viedma</option>
+
+                <option value="misiones">misiones</option>
+
+                <option value="tierra del fuego">tierra del fuego</option>
+
+                <option value="Santa cruz">santa cruz</option>
+
+                <option value="Entre rios">entre rios</option>
+
+                <option value="provincia del chaco">provincia del chaco</option>
+
+                <option value="otros...">otros...</option>
+
+            </select><br>
+    
+            <br><label for="tipo de piel">tipo de piel:</label><!-- el valor de for es el ID del select-->
+            <select id="tipo de piel" name="tipo de piel" required>
+
+                <option value="">seleccione una opción</option>
+
+                <option value="piel normal">piel normal</option>
+
+                <option value="piel seca">piel seca</option>
+
+                <option value="piel mixta">piel mixta</option>
+
+                <option value="piel grasa">piel grasa</option>
+
+                <option value="piel sensible">piel sensible</option>
+                   
+            </select>
+
+            <label for="Necesidad para su piel">necesidad para su piel:</label>
+            <select id="necesidad para su piel" name="necesidad para su piel" required>
+
+                <option value="">seleccione una opcion</option>
+
+                <option value="Anti manchas">anti manchas</option>
+
+                <option value="Hidratante">Hidratante</option>
+
+                <option value="limpieza">limpiaza</option>
+            </select>
+
+            
+    
+
+        </fieldset>
+     </form>
+
+
+
+
+
+
+</body>
+</html>
